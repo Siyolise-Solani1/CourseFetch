@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Registration">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="328dp"
+        android:layout_height="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ffcb0326_c9e1_4126_a22d_3e550ee37a24_200x200" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/logo"/>
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/username"/>
+
+    <EditText
+        android:id="@+id/userConfPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Confirm Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/userPass"/>
+
+    <TextView
+        android:id="@+id/fgtpass"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userConfPass"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Forgot password?"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/fgtpass"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXISTING USER! SIGN IN"
+        android:textSize="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnSignUp"/>
+
+
+</RelativeLayout>
